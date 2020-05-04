@@ -1,0 +1,25 @@
+GIT Useful Tips:
+- git status //retrieves any changes
+- git log [ -3] // shows branch history; used with number shows only specific number of logs
+- git add // stages all local changes (in the currenct dir) for the next commit
+- git commit  -m "some label" // commits the staged snapshot with message inside "" as a commit message
+- git commit --amend // amends the commit to the last commit (useful for updating a file from some previous commit)
+- git push origin HEAD:refs/for/master // push for review to gerrit always put FOR in the path
+- git reset HEAD~1 Remove <file> from the staging area, but leave the working directory unchanged. This unstages a file without overwriting any changes.
+
+inside .git/hooks:
+- ls commit-msg // this is the script which generates uniquie Change-Id to a commit
+
+HOW TO AMEND COMMIT WHICH IS NOT THE LAST ONE:
+git stash -a
+git rebase -i to the parent commit of the one which is to be changed
+	-on the screen which pop ups type e or edit before the commit which is going to be changed
+	
+git stash pop 
+git add 
+git commit --amend
+git push
+git rebase --continue
+
+ grep "\"RI_TREATY_FINANCIAL_RULES_I\"" ./ -rl --include="addCompsToPage_1PageDef.xml.xml" 
+ git clone "ssh://plamena.mihaylova@dev-infrastructure.briz.fadata.bg:29418/MW" && scp -p -P 29418 plamena.mihaylova@dev-infrastructure.briz.fadata.bg:hooks/commit-msg "MW/.git/hooks/"

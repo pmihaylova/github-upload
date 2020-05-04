@@ -1,0 +1,10 @@
+HOW TO AMEND COMMIT WHICH IS NOT THE LAST ONE:
+git stash -a
+git rebase -i to the parent commit of the one which is to be changed
+	-on the screen which pop ups type e or edit before the commit which is going to be changed
+	
+git stash pop 
+git add 
+git commit --amend
+git push
+git rebase --continue

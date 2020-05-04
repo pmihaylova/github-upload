@@ -1,0 +1,22 @@
+﻿Когато разработвам локално IVC:
+
+- дръпнала съм си темплейт от VCS
+- дръпнала съм си и MDS
+- настройвам си променливите в Build Prject-a
+	-project.name, project.package, project.alias - на каквито си искаме
+	-ui.checkoutdir го задаваме да е директорията, където сме дръпнали проекта
+	-промени в projectInit.props
+- build-вам апликейшъна
+	*В апликейшъна:
+	- добавям си необходимите библиотеки
+	- Application Properties (десен бутон на целия апликейшън горе) 
+		.Depolyment -> Weblogic -> всички отметки
+		.Run -> Weblogic -> Fast Swap
+			 -> MDS -> path към MDS, който съм свалила от VCS
+	- в web.xml намирам къде се дефинира config.xml, закоментирам релационния път и оставям пътя към локалния ми config.xml
+	
+Weblogic:
+- на адрес 127.0.0.1:7101/console - user: weblogic, pass: weblogic1
+- в Application Security Settings -> Security Realms -> My Realm -> (Tab) Users & groups -> 
+(Tab) User -> new user .. (за добавяне на група е аналогично)
+- добавям юзър в група като от (Tab) User влизам директно в юзъра и там му настройваме групите

@@ -1,0 +1,6 @@
+Debugging tips, useful EL evaluations:
+	- #{pageFlowScope}
+	- #{bindings.bindingContainer}
+
+Using Watches: 
+	- select a method or variable and "Ctrl + F5" and it will be displayed and evaluated in Watches

@@ -1,0 +1,5 @@
+Change Java version in WebLogic:
+
+D:\oracle_java\JDev\11.1.1.7.0\jdeveloper\system11.1.1.7.40.64.93\DefaultDomain\bin\setDomainEnv.cmd
+
+D:\oracle_java\JDev\11.1.1.7.0\wlserver_10.3\common\bin\commonEnv.cmd

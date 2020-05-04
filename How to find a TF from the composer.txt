@@ -1,0 +1,7 @@
+How to find a task flow or element from the composer:
+1. Find the name of the visual component (either from "print" or with right click on the particular element)
+
+2. Go to DB and execute: SELECT * FROM ht_web_content_source WHERE id like '$name_of_the_element' -> source column show where the file of the TF is located
+
+3. Alternative: if the project is freshly checkedout and the MDS has not been touched I can change the name of the element that I am searching for 
+   and then when I check for differences with MDS it will show me the file containing the change

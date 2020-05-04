@@ -1,0 +1,38 @@
+If BPM included:
+1. Start the Web Server:
+	- Window -> App Server -> Start Server //This starts Web Logic Server
+	- we put in conf/ "connectionConfig.xml"
+	- in conf/config.xml below <Database> we add "<ConnectionUnwrappers confFile="connectionConfig.xml"/>" 
+
+2. In file explorer we execute: D:\Oracle_Java\JDev\12.2.1.2.0\oracle_common\common\bin\wlst.cmd
+	- execute: connect('weblogic','weblogic1','t3://localhost:7101')
+	- execute: updateCred(map="oracle.wsm.security", key="insis-jbpm-key", user=”insis_configurator”, password="insis_configurator")
+	- execute: grantPermission(codeBaseURL="file:${domain.home}/servers/${weblogic.Name}/tmp/-", permClass="oracle.security.jps.service.credstore.CredentialAccessPermission", permTarget="context=SYSTEM,mapName=insis.security,keyName=*",permActions="*")
+	- in "grantPermission(codeBaseURL="file:${domain.home}/servers/${weblogic.Name}/tmp/_WL_user/imaging/-", permClass="oracle.security.jps.service.credstore.CredentialAccessPermission", permTarget="context=SYSTEM,mapName=insis.security,keyName=*",permActions="*")" replace "file" part with "file:${oracle.deployed.app.dir}/${oracle.deployed.app.ext}"
+and execute it; grantPermission(codeBaseURL="file:${oracle.deployed.app.dir}/${oracle.deployed.app.ext}/servers/${weblogic.Name}/tmp/_WL_user/imaging/-", permClass="oracle.security.jps.service.credstore.CredentialAccessPermission", permTarget="context=SYSTEM,mapName=insis.security,keyName=*",permActions="*")
+
+3. In file explorer in project's directory we go to .adf/META-INF/connections.xml (in order to have all DB connections set up right)
+	- there we replace content of <Contents> tag with 192.168.2.100 (from prefinsis) where attrType="hostname"
+	- also we replace content of <Contents> tag with INSISDB (from prefinsis) where attrType="serviceName"
+
+4. Replace the existing cwallet.sso in D:\Projects_Java\Insis\_WebUI\USEREXIT\LPV\10.4.4.0\App\src\META-INF with a ready version of the file
+	This can also be done with the "connections" file (if I have it from another colleague) 
+
+5. In conf/config.xml we set bpm
+	- <bpm>'s tag content should point to our bpm environment i.e. 192.168.2.100:7805/insis-bpm
+6. Load MDS
+	- go to Application Properties -> Run -> MDS -> Override Location -> we put the path to our local dir where we have checked out MDS project
+
+7. in web.xml we search for "config.xml" to see if the file is pointing to local path
+
+8. Add all needed libraries (see the screenshots in Plamena's helpers)
+	- if it's a MW project make a copy of ADF Library 10.5.3.1 locally and from it remove the current project you are setting; also make the path to the libs to point to L://
+
+9. Make a correction in web.xml
+	- in "<servlet-name>Init</servlet-name>" <servlet-class> should be "com.fadata.insis.servlet.Init"
+
+10. New JDEV set up - Application properties -> Deployment -> all fiels should be marked with tick
+
+11. Before running the application it's a good idea to check in Model through which connections the Business Components are run (Application Proeperties)
+
+12. If editing of IVC/VFU or FES is not enabled - add "<Constant id="COMPANY_BUTTON" value="TRUE"/> <Constant id="CORE_BUTTON" value="TRUE"/>" in config.xml

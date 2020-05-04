@@ -1,0 +1,6 @@
+<task-flow-call id="errorPage">
+	<task-flow-reference>
+ 		<document id="__7">/common/taskFlow/errorPage.xml</document>
+        	<id id="__8">errorPage</id>
+	</task-flow-reference>
+</task-flow-call>

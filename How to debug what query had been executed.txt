@@ -1,0 +1,9 @@
+In order to see the query that's being executed I should put breakpoint on: 
+
+InsisViewObjectImpl.executeQueryForCollection / 
+InsisViewObjectImpl.executeQuery 
+in Watches to add: getQuery(), getNamedWhereClauseParams(), getViewObject()
+
+In order to check which event is being called: 
+DefaultProcessor.fireEvent(SysEvent e, Map context) 
+the name of the event is the input parameter

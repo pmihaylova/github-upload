@@ -1,0 +1,27 @@
+SharePoint:
+https://fadatacompany.sharepoint.com/_layouts/15/sharepoint.aspx
+https://fadatacompany.sharepoint.com/sites/wiki/r-d-manifesto
+
+Office 365:
+https://portal.office.com/account/#security
+
+Windows:
+https://support.microsoft.com/bg-bg/help/12445/windows-keyboard-shortcuts
+https://www.windowscentral.com/best-windows-10-keyboard-shortcuts
+
+JDeveloper:
+https://docs.oracle.com/cd/E53569_01/tutorials/toc.htm
+https://docs.oracle.com/cd/E53569_01/tutorials/tut_rich_app_alta/tut_rich_app_alta_1.html#overview
+https://docs.oracle.com/cd/E23943_01/web.1111/b31974/taskflows.htm#ADFFD1631
+https://docs.oracle.com/cd/E29049_01/web.1112/e16182/taskflows.htm
+https://www.slideshare.net/baigsorcl/oracle-adf-task-flows-for-beginners
+https://docs.oracle.com/cd/E13174_01/alui/devdoc/docs60/Overview_of_the_Portal_Architecture/Portal_UI/PlumtreeDevDoc_Overview_MVCArchitecture.htm
+
+	Tutorials:
+	https://docs.oracle.com/cd/E53569_01/tutorials/tut_ide/tut_ide.html
+	https://docs.oracle.com/cd/E53569_01/tutorials/tut_rich_app/tut_rich_app.html
+	https://docs.oracle.com/middleware/12212/wls/RESTF/deploy-restful-service.htm#RESTF317
+	https://docs.oracle.com/middleware/12212/jdev/develop-extensions/index.html
+
+Jira:
+https://jira.briz.fadata.bg:8443/secure/TempoUserBoard!timesheet.jspa

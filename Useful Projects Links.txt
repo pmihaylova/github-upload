@@ -1,0 +1,8 @@
+http://10.3.4.97:7805/insis-bpm/login.jsp
+http://127.0.0.1:7101/console
+http://10.3.4.196:7802/insis_gen_v10/
+10.3.4.39:7700/em/faces/
+10.3.4.39:7702/insis_gen_v10/
+http://127.0.0.1:7803/InsisConfigurator
+
+http://127.0.0.1:7801/console - weblogic 11g

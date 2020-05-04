@@ -1,0 +1,8 @@
+Key Combinations:
+[Ctrl] + [-] to pop up the Go to Java Type dialog. It allows you to display Source or Javadoc info of the selected class.
+[Ctrl] + [=] to open the Recent Files dialog and then make your selection
+[CTRL] + [Shift] + [I] or View > Properties window to display Property window (Web Content)
+[CTRL] + [Shift] + [S] or View > Structure to display the Structure window is not visible
+[Ctrl] + [Shift] + [Enter] and JDeveloper provides auto-completion
+[Ctrl] + [Enter] to invoke code templates
+[Alt] + [left] or [right] arrow key to navigate backwards or forwards windows

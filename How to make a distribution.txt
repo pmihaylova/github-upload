@@ -1,0 +1,18 @@
+How to make a distribution:
+
+1. Checkout or pull/update in a newly created dirrectories both the project and its MDS
+2. Open the project from the new directory in JDeveloper
+3. In build.properties set ui.checkout.dir=D:/projects_java... to point to the current project
+4. In build.config.properties file in mds section I have to add " mds.skip=true "
+5. On build.xml right-click and then "run ant target" -> "prepare insis application distribution"
+6. In MDS directory I create insis.zip with all MDS files
+7. After successfully finished ant task I go to my new dir for the Application\full-distribution\insis\resources\metadata and create mds dir where i put the insis.zip
+8. In my new dir for the Application\full-distribution\insis\deployment-scripts\config I will make changes to build.properties and build-base.properties files
+9. In build.preperties I have to check if all the configured params are correctly defined for the current project;
+	- for LPV specifically I change "wl.app.name"=the name of the project (InsisLPVUE);
+									"wl.app.version"=the correct version of the application (V10.4.4.0);
+									"mds.ignore.distribution.metadata"=false (must be false);
+									"jbpm.version"=6 (the correct version of jbpm)
+10. In build-base.properties I have to comment out mds.archive.file=insis.zip
+11. In my new dir for the Application\full-distribution\insis I create an archive of the three folders (name of the distribution convention: LPV_InsisDistribution_08_08_2019)
+12. In WinSCP I copy the distribution to the client's environment

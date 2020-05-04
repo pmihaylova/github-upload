@@ -1,0 +1,25 @@
+ADF – Application Development Framework
+JSF – JavaServer Faces – a new standard Java framework for building Web applications
+WLS – Web Logic Server
+MDS – Metadata Services
+OPSS – Oracle Platform Security Services
+MVC – Model-View-Control (design pattern). The MVC paradigm allows you to separate the code that handles business logic from the code that controls presentation and event handling. Each page in the portal is made up of a combination of at least one Model and View, and one or more Controls.
+Model classes store the data for a page or page section. A single page might use one or more Model classes, depending on how much of the page data can be shared by other types of pages. A Model defines how data is accessed and set for a given page, including any functions necessary for security or data validation and modification. Models encapsulate calls to the portal server API and also store UI-specific data. Data that is globally accessed by the UI is available from the ActivitySpace object (discussed on the next page). All other data should be stored in a Model.
+
+View classes contain HTMLElements and HTMLConstructs that describe how the data from the Model should be displayed to the user. In the portal UI design, DisplayPage objects are used to aggregate View objects to encapsulate all the information needed to render a particular page. Some Views are common throughout the portal and some are specific to certain pages. For example, the banner that makes up the majority of the portal is a common View that defines the color scheme and where the search section will be displayed. In contrast, the View used to create and modify data within a User Profile is specific to the User Profile function and is seen only on that page.
+
+Control are actions or sets of actions that are executed when a specific event is triggered. Multiple Controls can be defined within a page, each with its own functional specification. For example, one Control might produce a popup window that allows the user to browse for a specific object and places the selection within the View, and another could save the new data to the Model.
+ADF Model is a central part of Oracle ADF, enabling you to create ADF applications based on different types of business services (Java, JPA/EJB, ADF Business Components, BAM, SOAP/REST, BPEL, BI, Portlets). ADF Model implements data controls and data bindings. Data controls abstract the implementation technology of a business service by using standard metadata interfaces to describe the service's operations and data collections, including information about the properties, methods, and types involved.
+ADF Business Components are prebuilt application objects that are based on Java EE design patterns and best practices and which simplify the development and maintenance of complex, high-performance, and database-centric services. When building service-oriented Java EE applications, developers implement the core business logic as one or more business services. These back-end services provide clients with a way to query, insert, update, and delete business data as required while enforcing appropriate business rules such as input validators. Using ADF Business Components, you can develop such services declaratively using wizards and visual editors in JDeveloper to generate the required metadata.
+ADF Controller: using JDeveloper, you can declaratively create task flows that can manage application control between different types of activities, such as pages, methods on managed beans, declarative case statements, or calls to other task flows. In addition, you can create bounded task flows, which are reusable task flow segments that can be called from an overall task flow.
+Application:
+-	Project for the view
+-	Project for the data model
+-	Controller components:
+o	ADF Faces
+o	ADF Task Flows
+Build Business Service – cone
+
+Javadoc – can use it to navigate for a given element. Invoke it by right-click on the element and then select “Javadoc”.
+
+D:\oracle_java\JDev\12.2.1.2.0\jdeveloper\jdeveloper.exe -singleuser

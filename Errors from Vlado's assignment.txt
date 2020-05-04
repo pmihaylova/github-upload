@@ -1,0 +1,18 @@
+1. genRiskCoveredTF няма никакво view дефинирано
+2. genRiskCovered.jsff не се използва никъде (той трябва да се добави във view-то на genRiskCoveredTF)
+3. в страницата Policies.jspx липсва panelStrechLayout, който да е в основата на layout-а
+4. тагът <af:messages> не се използва изобщо и няма смисъл от него
+5. бутоните <af:button text="#{viewres.InsuredObjects}" id="b1"/>, <af:button text="#{viewres.COVERS}" id="b2"/>
+не сочат към никакви съществуващи стойности
+6. използването на panelCollection компонента е излишно и също някои от фасетите му нито се използват, нито са
+изтрити от кода на страницата (<f:facet name="menus"/>, <f:facet name="statusbar"/>)
+7. най-удачно е двата бутона да са поставени в panelGroupLayout компонент
+8. и при двата dialog компонента на popup-те липсва title атрибутът
+9. в button тага не беше добавен popupBehavior
+10. в region-а на popup-а не беше дефиниран partial trigger
+11. не беше добавена връзката за метода в task flow-а
+12. не беше написан bean за covers
+13. sortProperty за всички колони от Policy таблицата бяха сбъркани
+14. методите в task flow-а бяха направени да врщат string, а не връщаха нищо
+15. нямаше binding, дефиниращ променливата за PolicyId от Policy екрана, която ще предаде стойността на атрибута в попъпите
+16. нямаше parameters таг в taskflow тага в pageDef-а на Policy, който да подава стойността на атрибута "PolicyId" от текущия ред

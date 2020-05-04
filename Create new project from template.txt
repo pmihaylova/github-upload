@@ -1,0 +1,21 @@
+1. Download the template project from the SVN repository - https://csa.fadata.eu/javalib/workspaces/INSIS_UI_Template/tags/${projectVersion}
+
+2. Open the project in JDeveloper
+	For projects with INSIS version 10.4.X use JDeveloper version 11.1.1.7.0
+	For projects with INSIS version 10.5.X use JDeveloper version 12.2.1.2.0
+	For projects with INSIS version 10.6.X, 10.7.X  use JDeveloper version 12.2.1.3.0
+	For projects with INSIS version 10.8.X use JDeveloper version12.2.1.4.0
+	
+3. Go to
+	3.1. Build/resources/build.properties file and change the following properties:
+		- project.name = MyNewProject
+		- package.name = mnp	
+		- dest.dir = D:/Projects_Java/ThePlaceWhereIKeepAllTheBestProjects
+		- ui.checkout.dir = ${dest.dir}/${project.alias}${project.name}
+		
+	3.2. Build/resources/wl.environment.properties file and change the following properties:
+		- mw.home			- Path to the JDeveloper
+		- java.home			- Path to the jdk which is used
+		
+4. Right click on Build/resources/build.xml and run ant target init_new_project
+

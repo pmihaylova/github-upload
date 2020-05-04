@@ -1,0 +1,49 @@
+Find my BPM Process:
+
+1. Business Process Management
+	- Processes
+	
+	insis_bpmx
+	
+	
+	
+	
+To find a process through DB:
+	
+	SELECT * FROM CFG_MENU_ENTRY WHERE parent_id LIKE '%%' (I get PARENT_ID from CFG - CFG System)
+	
+	
+	
+	
+	backingBeanScope.invoiceBean.setOrgButton
+	
+	BlcDocumentsView
+	
+	Lookup's last train opens with error: Definition PeopleRoleName of type Attribute is not found in HtClaimantBenefView
+	
+	#{backingBeanScope.custPolicyEngagementBillingBean.policyMaster}
+	
+	#{bindings.GenRiskCoveredView.currentRow.coverType}
+	
+	LPV-1989 - Make Payment Way editable only for dependent policies with 'Group Billing' billing type
+	1650 MDS Revision
+	1651 Revision
+	
+	backingBeanScope.policyBean.asIS eq '7' and 
+	
+	backingBeanScope.policyBean.asIS eq '7' and 
+	
+	<f:convertDateTime xmlns:f="http://java.sun.com/jsf/core" type="date"/>
+	
+	([1-9]|0[1-9]|[12][0-9]|3[01])[- \/.](0[1-9]|1[012])[- \/.](19|20)\d\d
+	
+	policy_annex_g
+	
+	LPV-2332
+	3000005569 - annex; 100000025012 - policy
+	SELECT * FROM ht_web_content_source WHERE id LIKE 'PT_POLICY_ADDCOND%';
+SELECT * FROM srv_event_function WHERE event_id ='CUST_CHECK_ADDCOND';
+--insis_cust.srv_cust_annex_bo.Check_Add_Cond_Annex
+SELECT * FROM hs_cond_type;
+#{backingBeanScope.polCmnCndBean.onEditCond}
+	

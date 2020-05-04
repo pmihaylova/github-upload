@@ -1,0 +1,27 @@
+ https://csa.fadata.eu/Adnic
+https://csa.fadata.eu/Centras
+https://csa.fadata.eu/Ethniki
+https://csa.fadata.eu/InsisAHE
+https://csa.fadata.eu/InsisLF
+https://csa.fadata.eu/IsleOfMan
+https://csa.fadata.eu/LPV
+https://csa.fadata.eu/Providna
+https://csa.fadata.eu/SGI
+https://csa.fadata.eu/Training
+https://csa.fadata.eu/javalib
+https://csa.fadata.eu/Oic
+https://csa.fadata.eu/Mug
+https://csa.fadata.eu/Britam
+https://csa.fadata.eu/Emose
+https://csa.fadata.eu/Generali
+https://csa.fadata.eu/Globality
+https://csa.fadata.eu/Groupama
+https://csa.fadata.eu/Takaful
+https://csa.fadata.eu/LahiTapiola
+https://csa.fadata.eu/LTToivo
+https://csa.fadata.eu/Prudential
+https://csa.fadata.eu/Qbe
+https://csa.fadata.eu/ThaiSri
+https://csa.fadata.eu/Zurich
+https://csa.fadata.eu/Frende
+https://csa.fadata.eu/UralSib
